@@ -27,16 +27,16 @@ mysql> INSERT INTO departments (name)
 -- people
 mysql> INSERT INTO people (name, email, department_id, age, gender)
      VALUES
-     ('あい', 'ai@gizumo.jp', '1', 10, 2),
-     ('うえ', 'ue@gizumo.jp', '1', 20, 1),
-     ('おか', 'oka@gizumo.jp', '1', 30, 2),
-     ('きく', 'kiku@gizumo.co.jp', '2', 40, 1),
-     ('けこ', 'keko@gizumo.co.jp', '2', 50, 1),
-     ('さし', 'sasi@gizumo.jp', '2', 60, 2),
-     ('すせ', 'suse@gizumo.jp', '2', 70, 1),
-     ('そた', 'sota@gizumo.jp', '3', 80, 2),
-     ('ちつ', 'titu@gizumo.co.jp', '4', 90, 1),
-     ('てと', 'teto@gizumo.co.jp', '5', 100, 1);
+     ('あい', 'ai@gizumo.jp', 1, 10, 2),
+     ('うえ', 'ue@gizumo.jp', 1, 20, 1),
+     ('おか', 'oka@gizumo.jp', 1, 30, 2),
+     ('きく', 'kiku@gizumo.co.jp', 2, 40, 1),
+     ('けこ', 'keko@gizumo.co.jp', 2, 50, 1),
+     ('さし', 'sasi@gizumo.jp', 2, 60, 2),
+     ('すせ', 'suse@gizumo.jp', 2, 70, 1),
+     ('そた', 'sota@gizumo.jp', 3, 80, 2),
+     ('ちつ', 'titu@gizumo.co.jp', 4, 90, 1),
+     ('てと', 'teto@gizumo.co.jp', 5, 100, 1);
 
 
 
@@ -63,7 +63,7 @@ mysql> INSERT INTO reports (person_id, content)
 
 
 --  Q5
-mysql> SELECT * FROM people WHERE gender = 1 ORDER BY age DESC;
+mysql> SELECT name,age FROM people WHERE gender = 1 ORDER BY age DESC;
 
 
 -- Q6　テーブル・レコード・カラムという3つの単語を適切に使用して、下記のSQL文を日本語で説明してください。
